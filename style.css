@@ -1,0 +1,42 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .google-button {
+      width: 40px;
+      height: 40px;
+      background-color: #6C151A; 
+      border-radius: 50%; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      position: fixed; 
+      top: 5px;
+      right: 5px;
+      z-index: 1000;
+    }
+
+    .google-button span {
+      color: white; 
+      font-size: 20px; 
+    }
+
+    .google-button.active {
+      background-color: #ffffff;
+      transform: scale(1.1); 
+    }
+
+    .google-button.active span {
+      color: #000;
+    }
